@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="nitesh_passman.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:nitesh_passman"
+    Shell.FlyoutBehavior="Flyout">
+
+      <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="All Passwords"
+        ContentTemplate="{DataTemplate local:AllPasswordsPage}"
+        Route="allpasswords" />
+
+    <ShellContent
+        Title="Add Application"
+        ContentTemplate="{DataTemplate local:NewApplication}"
+        Route="addapplication" />
+
+    <ShellContent
+        Title="Generate Password"
+        ContentTemplate="{DataTemplate local:RandomPasswordMaker}"
+        Route="genPass" />
+
+    <ShellContent
+        Title="About Us"
+        ContentTemplate="{DataTemplate local:AboutPage}"
+        Route="about" />
+
+  
+
+
+</Shell>
+

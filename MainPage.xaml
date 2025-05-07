@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="nitesh_passman.MainPage">
+    <ContentPage.Resources>
+         <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <FlexLayout Padding="20" Direction="Column">
+
+        <Label Text="Welcome to Password Manager!" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+
+       
+        <Label Text="Create your password" FontSize="18" Margin="10" FontAttributes="Bold" />
+
+        <Entry x:Name="passwordEntry" TextColor="Black" Placeholder="Password" IsPassword="True" Margin="10" />
+
+        <Button Text="Save" Clicked="OnSaveButtonClicked" Margin="10" BackgroundColor="#2196F3" TextColor="White" FontAttributes="Bold" />
+        <Label Text="Make sure to remember this password, without these you cannot view any entry created" FontSize="18" Margin="10" FontAttributes="Bold" />
+    </FlexLayout>
+
+    </ContentPage.Content>
+
+    
+</ContentPage>
+

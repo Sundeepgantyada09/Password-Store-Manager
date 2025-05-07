@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="nitesh_passman.NewApplication"
+             BackgroundColor="White"
+             Title="NewApplication">
+     <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10" BackgroundColor="#F7F7F7">
+            <Label TextColor="Black" Text="Add New Application" FontSize="Large" FontAttributes="Bold" Margin="0,10,0,10"/>
+
+            <Entry x:Name="appNameEntry" TextColor="Black" Placeholder="Application Name" Margin="0,0,0,10"/>
+            <Entry x:Name="appPasswordEntry" TextColor="Black" Placeholder="Application Password" IsPassword="True" Margin="0,0,0,10"/>
+
+            <Button Text="Save" Clicked="SaveButton_Clicked" BackgroundColor="#2196F3" TextColor="White" CornerRadius="5" HorizontalOptions="FillAndExpand" Margin="0,20,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
